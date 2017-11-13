@@ -11,8 +11,43 @@ function scene2() {
 
 
   // Setup Cast
+  var nedContainer = document.createElement('div')
+  stage.append(nedContainer);
+  nedContainer.style.position = 'absolute';
+  nedContainer.style.width = '10%';
+  nedContainer.style.height = '44%';
+  nedContainer.style.top = '50%';
+  nedContainer.style.left = '50%';
+  nedContainer.style.border = '2px solid red';
+  nedContainer.style.background = 'yellow';
 
   // Character 1
+  var ned = document.querySelector('#ned');
+  nedContainer.append(ned);
+
+  // grab armour
+  var leather = document.querySelector('#leather-armour');
+  nedContainer.append(leather);
+  ned.style.border = '2px solid blue';
+  leather.style.border = '2px solid green';
+
+  // align head and body
+  ned.style.width = '70%';
+  ned.style.position = 'absolute';
+  ned.style.top = 0;
+  leather.style.position = 'absolute';
+  leather.style.bottom = 0;
+
+  // position ned on rock
+  nedContainer.style.height = '37%'
+  nedContainer.style.top = '55%';
+  nedContainer.style.left = '25%';
+
+  // remove background and borders
+  ned.style.border = 'none';
+  leather.style.border = 'none';
+  nedContainer.style.border = 'none';
+  nedContainer.style.background = 'none';
 
   // Character 2
 
