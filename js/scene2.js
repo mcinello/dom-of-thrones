@@ -21,7 +21,7 @@ function scene2() {
   nedContainer.style.border = '2px solid red';
   nedContainer.style.background = 'yellow';
 
-  // Character 1
+  // Character 1 - Ned
   var ned = document.querySelector('#ned');
   nedContainer.append(ned);
 
@@ -49,7 +49,26 @@ function scene2() {
   nedContainer.style.border = 'none';
   nedContainer.style.background = 'none';
 
-  // Character 2
+  // Character 2 - Joffrey
+  var joffreyContainer = document.createElement('div')
+  joffreyContainer.id = 'joffrey-container';
+  stage.append(joffreyContainer);
+  joffreyContainer.style.position = 'absolute';
+  joffreyContainer.style.width = '8%';
+  joffreyContainer.style.height = '31%';
+  joffreyContainer.style.top = '55%';
+  joffreyContainer.style.left = '55%';
+
+  var joffrey = document.querySelector('#joffrey');
+  joffreyContainer.append(joffrey);
+  joffrey.style.width = '75%';
+  joffrey.style.position = 'absolute';
+  joffrey.style.left = '33%'
+
+  var kingWardrobe = document.querySelector('#king');
+  joffreyContainer.append(kingWardrobe);
+  kingWardrobe.style.position = 'absolute';
+  kingWardrobe.style.bottom = 0;
 
   // Setup Props
 
