@@ -76,25 +76,45 @@ function scene2() {
   var sword = document.querySelector('#sword');
   stage.append(sword);
   sword.style.position = 'absolute';
-  sword.style.top = '77%';
-  sword.style.left = '31%';
+  // sword.style.top = '77%';
+  // sword.style.left = '31%';
   sword.style.height = '5%';
   sword.style.transform = 'rotate(150deg)';
+  // sword.style.top = '64%';
+  // sword.style.left = '53%';
 
   // Prop 2
 
   // Action!
 
   // Stage direction 1
-
+  //start frame
   frame(function() {
+    sword.style.top = '77%';
+    sword.style.left = '31%';
+  })
 
+  frame(function () {
+    sword.style.top = '74%';
+    sword.style.left = '36%';
+  })
+
+  // middle frame
+  frame(function () {
+    sword.style.top = '71%';
+    sword.style.left = '41%';
+  })
+
+  frame(function () {
+    sword.style.top = '68%';
+    sword.style.left = '47%';
   })
 
   // Stage direction 2
-
+  // end frame
   frame(function() {
-
+    sword.style.top = '64%';
+    sword.style.left = '53%';
   })
 
 }
