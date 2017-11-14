@@ -76,18 +76,15 @@ function scene2() {
   var sword = document.querySelector('#sword');
   stage.append(sword);
   sword.style.position = 'absolute';
-  // sword.style.top = '77%';
-  // sword.style.left = '31%';
   sword.style.height = '5%';
   sword.style.transform = 'rotate(150deg)';
-  // sword.style.top = '64%';
-  // sword.style.left = '53%';
 
   // Prop 2
 
   // Action!
 
-  // Stage direction 1
+  // Stage direction 1 - Ned's sword
+
   //start frame
   frame(function() {
     sword.style.top = '77%';
@@ -110,11 +107,42 @@ function scene2() {
     sword.style.left = '47%';
   })
 
-  // Stage direction 2
   // end frame
   frame(function() {
     sword.style.top = '64%';
     sword.style.left = '53%';
   })
+
+  // Stage direction 2 - Joffrey's Head
+
+  frame(function() {
+  joffrey.style.top = 0;
+  joffrey.style.left = '33%';
+  joffrey.style.transform = 'rotateZ(220deg)';
+})
+
+frame(function() {
+  joffrey.style.top = '17%';
+  joffrey.style.left = '90%';
+  joffrey.style.transform = 'rotateZ(140deg)';
+})
+
+frame(function() {
+  joffrey.style.top = '35%';
+  joffrey.style.left = '160%';
+  joffrey.style.transform = 'rotateZ(260deg)';
+})
+
+frame(function() {
+  joffrey.style.top = '55%';
+  joffrey.style.left = '230%';
+  joffrey.style.transform = 'rotateZ(180deg)';
+})
+
+frame(function() {
+  joffrey.style.top = '75%'
+  joffrey.style.left = '300%'
+  joffrey.style.transform = 'rotateZ(100deg)'
+})
 
 }
